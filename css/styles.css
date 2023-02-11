@@ -402,6 +402,60 @@ line-height: 1.2;
 .social-link_footer:focus {
     background-color: var(--succes-color-green);
 }
+.email-input {
+    display: block;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--hero-background-color);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    margin-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+
+}
+.email-input:focus {
+    border-color: var(--primary-brand-color);
+    color: var(--hero-background-color);
+    background-color: var(--background-color);
+}
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.subscribe-icon {
+    position: relative;
+    
+}
+.icon-telegram {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+.btn.subscribe-button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 165px;
+    height: 40px;
+    padding-left: 24px;
+    border: none;
+    color: var(--background-color);
+    background-color: var(--primary-brand-color);   
+}
+.icon-telegram {
+    fill: var(--background-color);
+}
 
 .backdrop {
 position: fixed;
@@ -427,11 +481,12 @@ transition-delay: 250ms;
 position: absolute;
 top: 50%;
 left: 50%;
+
 transform: translate(-50%, -66%);
 transition: transform 250ms;
 transition-delay: 250ms;
 width: 408px;
-height: 576px;
+height: 584px;
 border-radius: 4px;
 background-color: var(--background-color);
 box-shadow: 0px 2px rgba(0, 0, 0, 0.2),
@@ -459,6 +514,142 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--background-color);
     background-color: var(--pressed-state-color);
 }
+
+.order-contacts {
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 72px;
+    letter-spacing: 2%;
+}
+.order_form {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    
+}
+.order-form-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    margin-bottom: 4px;
+    letter-spacing: 4%;
+      
+}
+.order-form-group {
+    position: relative;
+    margin-bottom: 8px;
+    
+}
+.order-form-field {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 36px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.order-form-field:focus {
+    border: 1px solid var(--primary-brand-color);
+}
+.order-form-field:focus + .order-form-icon {
+    fill: var(--primary-brand-color);
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.order-form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    pointer-events: none;
+}
+.order-form-comment {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    outline: transparent;
+    resize: none;
+}
+.order-form-comment:focus {
+    border: 1px solid var(--primary-brand-color);
+}
+.order-agreement {
+display: flex;
+position: relative;
+width: 100%;
+justify-content: center;
+align-items: center;
+gap: 8px;
+}
+.order-checkbox {
+display: inline-flex;
+position: absolute;
+appearance: none;
+top: 0;
+left: 0;
+justify-content: center;
+align-items: center;
+width: 16px;
+height: 16px;
+border: 1.25px solid var(--hero-background-color);
+border-radius: 2px;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M470.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L192 338.7 425.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' fill='%23fff'/%3E%3C/svg%3E");
+background-repeat: no-repeat;
+background-position: center;
+background-size: 16px;
+transition-property: background-color, border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} 
+.order-checkbox:checked {
+    background-color: var(--primary-brand-color);
+    border-color: var(--primary-brand-color);
+} 
+
+.order-form-desc {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+margin-bottom: 24px;
+/* margin-top: 16px; */
+}
+.order-link {
+color: var(--primary-brand-color);
+}
+.btn.button-send {
+display: block;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+width: 169px;
+height: 56px;
+padding: 0;
+color: var(--background-color);
+background-color: var(--primary-brand-color);
+}
+
+
 /* portfolio */
 .btn {    
     display: inline-block;
